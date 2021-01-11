@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="keywords" content="Count Down Timer" />
+        <meta name="description" content="Your Description..." />
+        <title>Count Down Timer</title>
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+
+    <body>
+        <div class="wrapper_For_Timer">
+            <div class="timer">
+                <div class="card">
+                    <canvas class="circle"></canvas>
+                    <span class="text hour" data-number="24">0</span>
+                    <p>Hours</p>
+                </div>
+                <div class="card">
+                    <canvas class="circle"></canvas>
+                    <span class="text minute" data-number="60">0</span>
+                    <p>Minutes</p>
+                </div>
+                <div class="card">
+                    <canvas class="circle"></canvas>
+                    <span class="text second" data-number="60">0</span>
+                    <p>Seconds</p>
+                </div>
+            </div>
+
+            <div class="time_selector">
+                <a href="#" class="Select_timeout">Show Timeout Panel </a>
+            </div>
+
+            <div class="pop_up inactive">
+                <select name="timer" id="select_hour"></select>
+                <select name="timer" id="select_minute"></select>
+                <select name="timer" id="select_second"></select>
+                <button class="Start_timeout">Start Timeout</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="resources/js/main.js"></script>
+    </body>
+</html>
